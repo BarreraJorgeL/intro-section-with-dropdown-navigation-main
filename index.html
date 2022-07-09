@@ -5,97 +5,109 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
   <title>Snap</title>
 </head>
-<body>
-  <header class="header-page">
-    <img src="images/logo.svg" alt="">
-    <nav>
-      <ul class="menu display-none">
-        <li class="menu__item">
-          <p>
-            Features
-            <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-              <path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/>
-            </svg>
-          </p>
-          <ul class="submenu">
-            <li class="submenu__item">
-              <p>
-                <img src="images/icon-todo.svg" alt="">
-                Todo List
-              </p>
-            </li>
-            <li class="submenu__item">
-              <p>
-                <img src="images/icon-calendar.svg" alt="">
-                Calendar
-              </p>
-            </li>
-            <li class="submenu__item">
-              <p>
-                <img src="images/icon-reminders.svg" alt="">
-                Reminders
-              </p>
-            </li>
-            <li class="submenu__item">
-              <p>
-                <img src="images/icon-planning.svg" alt="">
-                Planning
-              </p>
-            </li>
-          </ul>
-        </li>
-        <li class="menu__item">
-          <p>
-            Company
-            <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-              <path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/>
-            </svg>
-          </p>
-          <ul>
-            <li class="submenu__item"><p>History</p></li>
-            <li class="submenu__item"><p>Our Team</p></li>
-            <li class="submenu__item"><p>Blog</p></li>
-          </ul>
-        </li>
-        <li class="menu__item">
-          <p>Careers</p>
-        </li>
-        <li class="menu__item">
-          <p>About</p>
-        </li>
-      </ul>
-      <ul class="display-none">
-        <li>
-          <a href="#">Login</a>
-        </li>
-        <li>
-          <a href="#">Register</a>
-        </li>
-      </ul>
-    </nav>
-    <img src="images/icon-menu.svg" alt="">
-  </header>
-  <main>
-    <figure>
-      <img class="image" src="images/image-hero-mobile.png" alt="a man working from home">
-    </figure>
-    <div class="content text-center">
-      <h1 class="color-dark">Make remote work</h1>
-      <p class="color-medium">
-        Get your teams in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
-      </p>
-      <div class="display-flex">
-        <a class="button center color-ligth bg-dark solid-border" href="#">Learn More</a>
+<body class="js-body">
+  <section>
+    <div data-body-state="enable"></div>
+    <header class="[ js-header ] [ header-page ]">
+      <img class="[ header__logo icon ]" src="images/logo.svg" alt="">
+      <nav class="[ js-menu ] [ menu ] [ bg-light color-medium ]" data-menu-state="closed">
+        <div class="[ flex-container icon ]">
+          <img data-name="toggleMenu" src="images/icon-close-menu.svg" alt="">
+        </div>
+        <ul class="[ menu__group group--sections ]">
+          <li class="[ menu__item ]">
+            <p class="[ item__title ]" data-name="toggleSubmenu">
+              Features
+              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/>
+              </svg>
+            </p>
+            <ul class="[ js-submenu ] [ submenu ] [ bg-light ]" data-submenu-state="closed">
+              <li class="[ submenu__item ]">
+                <p class="[ item__title ]">
+                  <img src="images/icon-todo.svg" alt="">
+                  Todo List
+                </p>
+              </li>
+              <li class="[ submenu__item ]">
+                <p class="[ item__title ]">
+                  <img src="images/icon-calendar.svg" alt="">
+                  Calendar
+                </p>
+              </li>
+              <li class="[ submenu__item ]">
+                <p class="[ item__title ]">
+                  <img src="images/icon-reminders.svg" alt="">
+                  Reminders
+                </p>
+              </li>
+              <li class="[ submenu__item ]">
+                <p class="[ item__title ]">
+                  <img src="images/icon-planning.svg" alt="">
+                  Planning
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="[ menu__item ]">
+            <p class="[ item__title ]" data-name="toggleSubmenu">
+              Company
+              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/>
+              </svg>
+            </p>
+            <ul class="[ submenu ]" data-submenu-state="closed">
+              <li class="[ submenu__item ]"><p class="[ item__title ]">History</p></li>
+              <li class="[ submenu__item ]"><p class="[ item__title ]">Our Team</p></li>
+              <li class="[ submenu__item ]"><p class="[ item__title ]">Blog</p></li>
+            </ul>
+          </li>
+          <li class="[ menu__item ]">
+            <p class='[ item__title ]'>Careers</p>
+          </li>
+          <li class="[ menu__item ]">
+            <p class='[ item__title ]'>About</p>
+          </li>
+        </ul>
+        <ul class="[ menu__group group--login ]">
+          <li>
+            <a class="[ button ] [ color-medium bg-light ]" href="#">Login</a>
+          </li>
+          <li>
+            <a class="[ button ] [ border border-gray color-medium bg-light ]" href="#">Register</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="[ flex-container icon ]">
+        <img data-name="toggleMenu" src="images/icon-menu.svg" alt="">
       </div>
-    </div>
-  </main>
-  <footer class="footer-page">
-    <img class="icon" src="images/client-audiophile.svg" alt="one of our clients its audiophile">
-    <img class="icon" src="images/client-databiz.svg" alt="one of our clients its databliz">
-    <img class="icon" src="images/client-maker.svg" alt="one of our clients its maker">
-    <img class="icon" src="images/client-meet.svg" alt="one of our clients its meet">
-  </footer>
+    </header>
+    <main class="[ main ]">
+      <figure class="[ main__image main__image--mobile ]">
+        <img class="[ image ]" src="images/image-hero-mobile.png" alt="a man working from home">
+      </figure>
+      <figure class="[ main__image main__image--desktop ]">
+        <img class="[ image ]" src="images/image-hero-desktop.png" alt="a man working from home">
+      </figure>
+      <div class="[ main__content ]">
+        <h1 class="[ content__title ] [ color-dark ]">Make remote work</h1>
+        <p class="[ content__text ] [ color-medium ]">
+          Get your teams in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+        </p>
+        <div class="[ content__button ]">
+          <a class="[ button ] [ color-ligth bg-dark border ]" href="#">Learn More</a>
+        </div>
+      </div>
+    </main>
+    <footer class="[ footer ]">
+      <img class="[ icon ]" src="images/client-audiophile.svg" alt="one of our clients its audiophile">
+      <img class="[ icon ]" src="images/client-databiz.svg" alt="one of our clients its databliz">
+      <img class="[ icon ]" src="images/client-maker.svg" alt="one of our clients its maker">
+      <img class="[ icon ]" src="images/client-meet.svg" alt="one of our clients its meet">
+    </footer>
+  </section>
 </body>
 </html>
