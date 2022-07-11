@@ -8,22 +8,19 @@
   <script defer src="script.js"></script>
   <title>Snap</title>
 </head>
-<body class="js-body">
-  <section>
-    <div data-body-state="enable"></div>
+<body>
+  <section class="[ js-body ] [ body ]" data-body-state="enable">
     <header class="[ js-header ] [ header-page ]">
       <img class="[ header__logo icon ]" src="images/logo.svg" alt="">
       <nav class="[ js-menu ] [ menu ] [ bg-light color-medium ]" data-menu-state="closed">
-        <div class="[ flex-container icon ]">
-          <img data-name="toggleMenu" src="images/icon-close-menu.svg" alt="">
+        <div class="[ flex-container ]">
+          <img class="[ icon ]" data-name="toggleMenu" src="images/icon-close-menu.svg" alt="">
         </div>
         <ul class="[ menu__group group--sections ]">
           <li class="[ menu__item ]">
             <p class="[ item__title ]" data-name="toggleSubmenu">
               Features
-              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-                <path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/>
-              </svg>
+              <img src="images/icon-arrow-down.svg" alt="">
             </p>
             <ul class="[ js-submenu ] [ submenu ] [ bg-light ]" data-submenu-state="closed">
               <li class="[ submenu__item ]">
@@ -55,9 +52,7 @@
           <li class="[ menu__item ]">
             <p class="[ item__title ]" data-name="toggleSubmenu">
               Company
-              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-                <path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/>
-              </svg>
+              <img src="images/icon-arrow-down.svg" alt="">
             </p>
             <ul class="[ submenu ]" data-submenu-state="closed">
               <li class="[ submenu__item ]"><p class="[ item__title ]">History</p></li>
@@ -81,8 +76,8 @@
           </li>
         </ul>
       </nav>
-      <div class="[ flex-container icon ]">
-        <img data-name="toggleMenu" src="images/icon-menu.svg" alt="">
+      <div class="[ flex-container ]">
+        <img class="[ icon ]" data-name="toggleMenu" src="images/icon-menu.svg" alt="">
       </div>
     </header>
     <main class="[ main ]">
