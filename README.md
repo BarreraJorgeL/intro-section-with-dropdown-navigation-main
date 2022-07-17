@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [](https://barrerajorgel.github.io/intro-section-with-dropdown-navigation-main/)
+- Live Site URL: [DropDownNavigation](https://barrerajorgel.github.io/intro-section-with-dropdown-navigation-main/)
 
 ### Built with
 
