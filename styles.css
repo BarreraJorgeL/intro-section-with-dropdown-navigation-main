@@ -169,9 +169,6 @@ section{
     [data-body-state]::after{
         display: none;
     }
-    /* [data-body-state]{
-        display: none;
-    } */
     .header-page{
         grid-column: 1 / -1;
         display: grid;

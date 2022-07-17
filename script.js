@@ -43,7 +43,6 @@ document.addEventListener('click', e => {
     }
 });
 
-
 subMenus.forEach(subMenu => {
     subMenu.offsetParent.addEventListener('mouseenter', () => {
         if(window.innerWidth >= 900){
